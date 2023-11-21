@@ -1,0 +1,300 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out ;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+}
+.logo {
+    width:10vmax;
+    height:10vmax;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav{
+    padding: 0%;
+}
+nav li {
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+    padding-left: 5vmax;
+    padding-right: 5vmax;
+    white-space: nowrap; 
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        padding: 1.3vmax;
+        white-space: nowrap;
+    }
+}
+
+nav li a {
+    color: #000000;
+    text-decoration: none;
+    padding-left: 0%;
+}
+header button{
+    background-color:inherit;
+    border-style: outset;
+    border-color: #000000;
+    color: #000000;
+ 
+}
+header button, nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size:medium;
+    border: none;
+    margin: 0%;
+    padding: 0%;    
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header button::before,nav li a::before {
+    margin-left: auto;
+  }
+  
+ header button::after, header button::before,nav li a::after,nav li a::before {
+    content: '';
+    width: 0%;
+    height: 0.5%;
+    background: #000000;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  header button:hover::after, header button:hover::before,nav li a:hover::after,nav li a:hover::before {
+    width: 100%;
+  }
+section {
+    padding:5%;
+}
+
+.logo {
+    width:10%;
+    height:auto;
+}
+.main{
+    background-image: url('./assessts/images/image2.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    padding: auto;
+    margin: auto;
+}
+.main img{
+    width: 30%;
+    padding:0;
+}
+.main h2{
+    color:#000000;
+    font-family:cursive;
+    font-size: xx-large;
+    padding: 0;
+}
+.main p {
+    padding: 0;
+    color: #000000;
+    text-align:center;
+    font-family: monospace;
+    font-size: large;
+}
+.main button {
+    padding:1% 4% 1% 4%;
+    border: unset;
+    border-radius: 15px;
+    color: #ffffff;
+    z-index: 1;
+    background: #000000;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .main button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #ffeaea;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .main button:hover {
+    color: #000000;
+   }
+   
+   .main button:hover::before {
+    width: 100%;
+   }
+.Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services{
+    display: flex;
+    flex-direction:row;
+   }
+.services img{
+    width: 90%;
+    height: auto;
+    border-radius: 45%;
+}
+.serviceBox{
+    text-align: center;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: #fffdfd;
+    border-radius: 8px;
+    box-shadow: 0 0 50% rgba(0, 0, 0, 0.1);
+    margin-bottom: 2%;
+}
+
+.testimonial img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    margin-top:2%;
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-info,
+.footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-info h3,
+.footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-text {
+    margin-top: 20px;
+}
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }
+  
+  .button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+  }
